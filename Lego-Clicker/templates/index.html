@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lego Clicker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Lego Clicker</h1>
+        <h2>Points: {{ points }}</h2>
+        <h3>Points Per Click: {{ points_per_click }}</h3>
+
+        <div class="lego-container">
+            <a href="{{ url_for('click') }}">
+                <img src="{{ url_for('static', filename='red-lego-button.png') }}" alt="Click the Lego">
+            </a>
+        </div>
+
+        <div class="buttons">
+            <a class="btn" href="{{ url_for('upgrade') }}">Upgrade (+1 per click for 50 points)</a>
+            <a class="btn" href="{{ url_for('upgrade_10') }}">Upgrade +10 (+10 per click for 500 points)</a>
+            <a class="btn" href="{{ url_for('upgrade_100') }}">Upgrade +100 (+100 per click for 5000 points)</a>
+            <a class="btn" href="{{ url_for('reset') }}">Reset</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: #f7df1e;
+    color: #333;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #0056a3;
+}
+
+h2, h3 {
+    margin-top: 20px;
+}
+
+.lego-container img {
+    width: 400px;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.lego-container img:hover {
+    transform: scale(1.1);
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #0056a3;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #003d75;
+}

@@ -1,0 +1,9 @@
+lego_clicker
+
+    app.py
+
+    static
+        style.css
+    
+    templates
+        index.html
